@@ -52,7 +52,7 @@ while program == "on":
         elif question == "y":
             menu = "off"
         else:
-            print("unknown expression")
+            print("Unknown expression")
             print()
 
 
