@@ -24,13 +24,25 @@ while True:
         print("The result is: " + result)
 
     elif x == "sub":
-        print("sub")
+        print()
+        num1 = float(input("Type a number: "))
+        num2 = float(input("Type another number: "))
+        result = str(num1 * num2)
+        print("The result is: " + result)
 
     elif x == "mul":
-        print("mult")
+        print()
+        num1 = float(input("Type a number: "))
+        num2 = float(input("Type another number: "))
+        result = str(num1 * num2)
+        print("The result is: " + result)
 
     elif x == "div":
-        print("div")
+        print()
+        num1 = float(input("Type a number: "))
+        num2 = float(input("Type another number: "))
+        result = str(num1 / num2)
+        print("The result is: " + result)
 
     else:
         print("Unknown expression")
