@@ -38,8 +38,8 @@ while program == "on":
         menu = "on"
 
     else:
-        print("Unknown expression")
-        print("Try again")
+        print("Unknown expression.")
+        print("Try again:")
         menu = "off"
 
     while menu == "on":
@@ -52,7 +52,7 @@ while program == "on":
         elif question == "y":
             menu = "off"
         else:
-            print("Unknown expression")
-            print()
+            print("Unknown expression.")
+            print("Try again:")
 
 
