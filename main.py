@@ -12,7 +12,9 @@ def operations():
         result = str(num1 / num2)
     return result
 
-while True:
+
+program = "on"
+while program == "on":
 
     print()
     print("Options:")
@@ -25,7 +27,7 @@ while True:
     option = input()
 
     if option == "q":
-        break
+        program = "off"
 
     elif option == "add" or option == "sub" or option == "mul" or option == "div":
         print()
@@ -33,10 +35,24 @@ while True:
         num2 = float(input("Type another number: "))
         result = operations()
         print("The result is: " + result)
+        menu = "on"
 
     else:
         print("Unknown expression")
         print("Try again")
-        continue
+        menu = "off"
+
+    while menu == "on":
+        print()
+        print("Do you want to do another operation?")
+        question = input("Type 'y' to yes e 'n' for no: ")
+        if question == "n":
+            menu = "off"
+            program = "off"
+        elif question == "y":
+            menu = "off"
+        else:
+            print("unknown expression")
+            print()
 
 
