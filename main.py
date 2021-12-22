@@ -1,6 +1,17 @@
 # Create a calculator.
 # Crie uma calculadora.
 
+def operations():
+    if option == "add":
+        result = str(num1 + num2)
+    elif option == "sub":
+        result = str(num1 - num2)
+    elif option == "mul":
+        result = str(num1 * num2)
+    else:
+        result = str(num1 / num2)
+    return result
+
 while True:
 
     print()
@@ -11,37 +22,16 @@ while True:
     print("Type 'div' para divide:")
     print("Type 'q' to quit:")
 
-    x = input()
+    option = input()
 
-    if x == "q":
+    if option == "q":
         break
 
-    elif x == "add":
+    elif option == "add" or option == "sub" or option == "mul" or option == "div":
         print()
         num1 = float(input("Type a number: "))
         num2 = float(input("Type another number: "))
-        result = str(num1 + num2)
-        print("The result is: " + result)
-
-    elif x == "sub":
-        print()
-        num1 = float(input("Type a number: "))
-        num2 = float(input("Type another number: "))
-        result = str(num1 * num2)
-        print("The result is: " + result)
-
-    elif x == "mul":
-        print()
-        num1 = float(input("Type a number: "))
-        num2 = float(input("Type another number: "))
-        result = str(num1 * num2)
-        print("The result is: " + result)
-
-    elif x == "div":
-        print()
-        num1 = float(input("Type a number: "))
-        num2 = float(input("Type another number: "))
-        result = str(num1 / num2)
+        result = operations()
         print("The result is: " + result)
 
     else:
